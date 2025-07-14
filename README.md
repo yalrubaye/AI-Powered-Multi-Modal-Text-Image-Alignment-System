@@ -17,4 +17,6 @@ This project is a deep learning system that matches images and text based on how
 📊 Results
 - Alignment Accuracy: 95%+
 - Loss Reduction: 80% in 5 epochs
-- Training Time: Less than 10 minutes on most GPUs
+- Training Time: Less than 10 minutes on most GPUs  
+
+Each digit label is randomly changed, so a "5" might become "Five", "quinque", or "Paanch", to make every training run a unique and fun way to teach the model how different words can mean the same thing.
