@@ -1,4 +1,4 @@
-from transformers import AutoTokenizer
+//from transformers import AutoTokenizer
 import random
 
 def batched_tokenizer(texts):
@@ -28,4 +28,5 @@ def convert_digits_to_random_text(labels):
 
 if __name__ == '__main__':
     batch_texts = ["The quick brown fox", "jumps over the lazy dog", "hello world"]
+
     encoded_batch = batched_tokenizer(batch_texts)
