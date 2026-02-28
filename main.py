@@ -1,4 +1,4 @@
-import torch
+//import torch
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
 from transformers import AutoTokenizer, AutoModel
@@ -81,4 +81,5 @@ class Trainer:
 
 if __name__ == "__main__":
     trainer = Trainer()
+
     trainer.fit()
