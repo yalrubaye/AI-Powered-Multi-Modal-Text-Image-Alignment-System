@@ -17,6 +17,7 @@ class MultiModalModel(nn.Module):
             nn.Flatten(),                          # Flatten to a vector
             nn.Linear(64 * 7 * 7, image_embedding_dim),  # Map to image embedding
             nn.ReLU()
+            nn.ReLU()
         )
         
         # Text Encoder
@@ -31,4 +32,5 @@ class MultiModalModel(nn.Module):
         image_embedding = self.image_encoder(images)
         text_embedding = self.text_encoder(text_embeddings)
         
+
         return image_embedding, text_embedding
