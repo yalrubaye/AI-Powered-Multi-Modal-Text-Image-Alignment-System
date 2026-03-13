@@ -5,6 +5,7 @@ def batched_tokenizer(texts):
     tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
     encoded = tokenizer(texts, padding=True, truncation=True, return_tensors="pt")
     return encoded
+    return encoded
 
 def convert_digits_to_random_text(labels):
     digit_to_text = {
@@ -30,6 +31,7 @@ if __name__ == '__main__':
     batch_texts = ["The quick brown fox", "jumps over the lazy dog", "hello world"]
 
     encoded_batch = batched_tokenizer(batch_texts)
+
 
 
 
