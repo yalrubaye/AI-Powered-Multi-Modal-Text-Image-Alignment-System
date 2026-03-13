@@ -12,7 +12,6 @@ class MultiModalModel(nn.Module):
             nn.ReLU(),
             nn.MaxPool2d(kernel_size=2, stride=2),  # Output: 32 x 14 x 14
             nn.MaxPool2d(kernel_size=7, stride=3),  # Output: 32 x 14 x 15
-            nn.MaxPool2d(kernel_size=8, stride=1),  # Output: 32 x 14 x 15
             nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
             nn.ReLU(),
             nn.MaxPool2d(kernel_size=2, stride=2),  # Output: 64 x 7 x 7
@@ -35,6 +34,7 @@ class MultiModalModel(nn.Module):
         
 
         return image_embedding, text_embedding
+
 
 
 
